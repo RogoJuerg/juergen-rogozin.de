@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   images = ['img1.jpg', 'img2.jpg', 'img3.jpg'];
+  headlines = ['Bring engeneering to the next level', 'Born to code', 'Peepee in poopoo'];
   currentImage = 0;
   showImage = true;
 
@@ -18,7 +19,7 @@ export class AppComponent implements OnInit {
 
     setInterval(() => {
       this.currentImage++;
-      this.currentImage = this.currentImage % this.images.length;
+      this.currentImage = this.currentImage % this.images.length; 
       this.showImage = false;
 
       setTimeout(() => {
